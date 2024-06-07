@@ -9,7 +9,7 @@ const ContainerHeader = styled.header`
     background-color: gray;
     background-image: url(${imagHeader});
     background-position: center;
-    background-size: 100vw;
+    background-size: 100%;
     background-repeat: no-repeat;
     flex-direction: column;
     align-items: center;
@@ -17,10 +17,10 @@ const ContainerHeader = styled.header`
 
 
 export const H1header = styled.h1`
-    font-family: Fraunces;
-    font-weight: 900;
+    font-family: ${({theme}) => theme.font.familyfraunces.fraunces};
+    font-weight: ${({theme, }) =>  theme.font.familyfraunces.fontweights.bold };
     font-size: 50px;
-    color: white;
+    color: ${props => props.theme.colors.neutral.white};
     margin-top: 40px;
 `
 export const Seta = styled.div`

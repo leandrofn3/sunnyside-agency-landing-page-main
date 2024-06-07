@@ -1,11 +1,16 @@
 import React from "react"
 import Home from "./pages/Home"
+import DefautTheme from "./config/theme"
+import GlobalStyled from "./config/GlobalStyled"
 
 const App: React.FC = () => {
 
   return (
     <React.Fragment>
-      <Home />
+      <DefautTheme>
+        <Home />
+        <GlobalStyled/>
+      </DefautTheme>
     </React.Fragment>
   )
 }

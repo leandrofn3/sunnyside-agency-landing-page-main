@@ -11,7 +11,7 @@ const Header: React.FC = () => {
                 <H1header>
                     WE ARE CREATIVES
                 </H1header>
-                <Seta/>
+                <Seta />
             </ContainerHeader>
         </React.Fragment>
     )

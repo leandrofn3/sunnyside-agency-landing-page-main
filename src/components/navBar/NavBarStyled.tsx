@@ -27,16 +27,21 @@ export const ContainerLinks = styled.div`
     align-items: center;
     justify-content: flex-end;
     gap: 25px;
-    font-family: Barlow;
-    font-weight: 600;
+    font-family: ${({ theme }) => theme.font.familybarlow.barlow};
+    font-weight: ${({ theme }) => theme.font.familybarlow.fontweights};
     > button:hover {
         transform: scale(1.2);
+    }
+
+    & a:hover {
+    
+    cursor: pointer;
+    transform: scale(1.1)
     }
 `
 
 export const TextHeader = styled.a`
     color: white;
-    cursor: pointer;
 `
 
 export const ButtonNavBar = styled.button`
@@ -45,9 +50,9 @@ export const ButtonNavBar = styled.button`
     width: 100px;
     padding: 5px;
     border: none;
-    font-weight: 600;
+    font-weight: ${({ theme }) => theme.font.familybarlow.fontweights};
     font-size: 16px;
-    font-family: Barlow;
+    font-family:${({ theme }) => theme.font.familybarlow.barlow};
     cursor: pointer;
 `
 
