@@ -3,11 +3,15 @@ import cherry from "../../images/desktop/image-graphic-design.jpg"
 import orange from "../../images/desktop/image-photography.jpg"
 
 export const ContainerService = styled.section`
-    border: 1px solid red;
     display: flex;
     width: 100%;
     height: 570px;
     flex-wrap: wrap;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 104%;
+        
+    }
 `
 
 export const ContainerContentServicesCherry = styled.div`
@@ -29,6 +33,10 @@ export const TitleServiceh2 = styled.h2`
     color: ${({ theme }) => theme.colors.neutral.verydarkdesaturatedblue};
     margin-top: 330px;
     margin-bottom: 30px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 20px;
+    }
 `
 
 export const ParagrafyCherry = styled.p`

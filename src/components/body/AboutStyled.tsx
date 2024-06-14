@@ -3,15 +3,20 @@ import egg from "../../images/desktop/image-transform.jpg"
 import cup from "../../images/desktop/image-stand-out.jpg"
 
 
-export const ContainerBody = styled.section`
+export const ContainerAbout = styled.section`
     display: flex;
     width: 100%;
     height: 570px;
     flex-wrap: wrap;
-    margin-bottom: 570px;
+    margin-bottom: 568px;
+    border: 1px solid red;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 794px;
+    }
 `
 
-export const ContainerContentBody = styled.div`
+export const ContainerContentAbout = styled.div`
     display: flex;
     width: 50%;
     height: 100%;
@@ -19,7 +24,7 @@ export const ContainerContentBody = styled.div`
     justify-content: center;
     align-items: center;
 `
-export const TitleBodyH2 = styled.h2`
+export const TitleAboutH2 = styled.h2`
     font-family: ${({ theme }) => theme.font.familyfraunces.fraunces};
     font-weight: ${({ theme }) => theme.font.familyfraunces.fontweights.extrabold};
     font-size: 40px;
@@ -27,9 +32,15 @@ export const TitleBodyH2 = styled.h2`
     color: ${({theme})=> theme.colors.neutral.verydarkdesaturatedblue};
     margin-right: 160px;
     margin-bottom: 50px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 28px;
+        margin-left: 160px;
+        /* border: 1px solid; */
+    }
 `
 
-export const ParagrafyBodyP = styled.p`
+export const ParagrafyAboutP = styled.p`
     font-family: ${({ theme }) => theme.font.familybarlow.barlow};
     font-weight: ${({ theme }) => theme.font.familybarlow.fontweights};
     font-size: 20px;
@@ -37,6 +48,12 @@ export const ParagrafyBodyP = styled.p`
     width: 510px;
     line-height: 30px;
     margin-bottom: 50px;
+    /* border: 1px solid; */
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 14px;
+        width: 350px;
+    }
 `
 export const LearnMore = styled.a`
     font-family: ${({ theme }) => theme.font.familyfraunces.fraunces};
@@ -49,6 +66,12 @@ export const LearnMore = styled.a`
     color: ${({theme})=> theme.colors.neutral.verydarkdesaturatedblue};
     cursor: pointer;
 
+    @media (min-width: 768px) and (max-width: 991px) {
+        /* border: 1px solid; */
+        margin-left: 250px;
+        width: 200px;
+        font-size: 13px;
+    }
 `
 
 export const ImgBodyEgg = styled.div`
@@ -61,19 +84,33 @@ export const ImgBodyEgg = styled.div`
 export const ImgBodyCup = styled(ImgBodyEgg)`
 background-image: url(${cup});
 `
-export const TitleH2Body = styled(TitleBodyH2)`
-width: 430px;
-margin-left: 150px;
+export const TitleH2Body = styled(TitleAboutH2)`
+    width: 309px;
+    margin-left: 30px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+    margin-right: 10px;
+    }
 
 `
 
-export const BodyParagrafyP = styled(ParagrafyBodyP)`
-margin-left: 70px;
+export const BodyParagrafyP = styled(ParagrafyAboutP)`
+    margin-left: 70px;
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+    margin-left: 60px;
+    font-size: 14px;
+    }
 `
 
 export const LearnMore2 = styled(LearnMore)`
     text-decoration-color: ${({theme})=> theme.colors.primary.softred};
     margin-left: 72px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-left: 200px;
+        width: 85px;
+    }
 `
 
 

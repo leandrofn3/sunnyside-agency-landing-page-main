@@ -9,6 +9,11 @@ export const ContainerSectionImages = styled.section`
     width: 100%;
     height: 400px;
     display: flex;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 104%;
+        
+    }
 `
 
 export const PlasticBottle = styled.div`

@@ -10,6 +10,12 @@ export const TestimonialsContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: 1300px;
+        width: 104%;
+
+    }
 `
 
 export const ContainerTestimonialsContent = styled.div`
@@ -20,6 +26,12 @@ export const ContainerTestimonialsContent = styled.div`
     width: 1200px;
     flex-wrap: wrap;
     margin-top: 70px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+    /* border: 1px solid; */
+    height: 800px;
+    margin-bottom: 100px;
+    }
 `
 
 export const CardClient = styled.div`

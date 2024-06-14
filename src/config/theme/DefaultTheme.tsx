@@ -8,7 +8,7 @@ const theme = {
             yellow: "#fad400",
             darkdesaturatedcyan: "#25564b",
             darkblue: "#19536b",
-            darkmoderatecyan: "#458c7e",
+            darkmoderatecyan: "#8ad2c4",
         },
         neutral: {
             verydarkdesaturatedblue: "#23303e",

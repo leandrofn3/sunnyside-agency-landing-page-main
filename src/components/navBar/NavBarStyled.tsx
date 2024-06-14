@@ -2,13 +2,19 @@ import { styled } from "styled-components"
 import logo from "../../images/logo.svg"
 
 const NavBarContainer = styled.div`
-
     width: 100vw;
     height: 10vh;
     display: flex;
     align-items: center;
     gap: 817px;
     margin-top: 10px;
+    /* border: 1px solid; */
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: 75px;
+        width: 100%;
+        gap: 240px;
+    }
 `
 export const Logo = styled.div`
     background-image: url(${logo});
@@ -18,6 +24,12 @@ export const Logo = styled.div`
     width: 160px;
     height: 30px;
     margin-left: 25px;
+    /* border: 1px solid red; */
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: 70px;
+        width: 175px;
+    }
 `
 
 export const ContainerLinks = styled.div`
@@ -29,8 +41,9 @@ export const ContainerLinks = styled.div`
     gap: 25px;
     font-family: ${({ theme }) => theme.font.familybarlow.barlow};
     font-weight: ${({ theme }) => theme.font.familybarlow.fontweights};
+    /* border: 1px solid ; */
     > button:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     & a:hover {
@@ -38,10 +51,20 @@ export const ContainerLinks = styled.div`
     cursor: pointer;
     transform: scale(1.1)
     }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 350px;
+        height: 100%;
+        margin-right: 18px;
+        
+    }
 `
 
 export const TextHeader = styled.a`
     color: white;
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 16px;
+    }
 `
 
 export const ButtonNavBar = styled.button`
@@ -50,10 +73,16 @@ export const ButtonNavBar = styled.button`
     width: 100px;
     padding: 5px;
     border: none;
-    font-weight: ${({ theme }) => theme.font.familybarlow.fontweights};
+    font-family: ${({theme}) => theme.font.familyfraunces.fraunces};
+    font-weight: ${({theme, }) =>  theme.font.familyfraunces.fontweights.bold };
     font-size: 16px;
-    font-family:${({ theme }) => theme.font.familybarlow.barlow};
     cursor: pointer;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: 60px;
+        width: 86px;
+        font-size: 14px;
+    }
 `
 
 export default NavBarContainer
